@@ -8,11 +8,17 @@ body{
 .header{
     background-color: #1F2937;
     display: flex;
+    flex-wrap: inherit;
     justify-content: space-between;
     align-items: center;
-    padding:0 150px;
-    padding-bottom: 80px;
+ 
 }
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
 .logo{
     width: 50px;
     height: 50px;
@@ -94,12 +100,17 @@ li{
     text-align: center;
 }
 .images{
+
+    padding: 16px;
+flex-wrap: wrap;
     display: flex;
-    padding:0 150px;
-    justify-content: space-around;
-    padding-top: 30px;
-    height: 300px;
-}
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+
+
 
 .cat{
     width:180px ;
